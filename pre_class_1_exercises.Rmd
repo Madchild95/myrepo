@@ -10,10 +10,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 # Working directory
-setwd("C:/Users/matil/OneDrive/Skrivebord/AU/3rd semester/ExMeth III/LectureClass1")
-install.packages("tidyverse")
 library(tidyverse)
 ```
 
@@ -23,7 +20,6 @@ The warm-up for class will use the mtcars dataset which is always present in R.
 The following code shows you how load the dataset
 
 ```{r load the data}
-pacman::p_load(pacman, tidyverse) #laod packages
 ? mtcars # what are the variables
 cars <- mtcars %>% rownames_to_column(var = "type") # tranform to tibble
 ```
